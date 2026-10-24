@@ -18,7 +18,9 @@
 | ![product](docs/screenshots/product.png) | ![mobile](docs/screenshots/mobile-shop.png) | ![error](docs/screenshots/network-error.png) |
 
 ## لینک دمو
-لینک دمو هنوز منتشر نشده است. برای انتشار: API را روی یک سرویس Node (مثلاً Render) و فرانت را روی Netlify/Vercel مستقر کنید و هنگام build مقدار `VITE_API_URL` را روی نشانی API بگذارید (جزئیات پایین‌تر).
+🔗 **[مشاهدهٔ دمو](https://mohamadreza-21.github.io/daroyar-demo/)**
+
+https://mohamadreza-21.github.io/daroyar-demo/
 
 ## امکانات
 - **فروشگاه:** جست‌وجوی فارسی (یکسان‌سازی «ي/ك»، نیم‌فاصله، «آ/ا» و ارقام فارسی/عربی)، فیلتر هم‌زمان (دسته، حداکثر قیمت، فقط موجود، فقط تخفیف‌دار)، مرتب‌سازی، صفحه‌بندی سمت سرور، پاک کردن فیلترها
