@@ -87,10 +87,10 @@
   @keyframes floaty {
     0%,
     100% {
-      transform: translateY(0);
+      transform: translate3d(0, 0, 0);
     }
     50% {
-      transform: translateY(-14px);
+      transform: translate3d(0, -14px, 0);
     }
   }
   @keyframes ripple {
@@ -284,4 +284,13 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+.scroll-shadow-x {
+  background:
+    linear-gradient(to right, var(--color-surface) 30%, transparent) left center / 40px 100% no-repeat local,
+    linear-gradient(to left, var(--color-surface) 30%, transparent) right center / 40px 100% no-repeat local,
+    radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / 0.16), transparent) left center / 14px 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 0.16), transparent) right center / 14px 100% no-repeat scroll;
+  background-color: var(--color-surface);
 }

@@ -1,17 +1,18 @@
 {
-  "name": "darooyar-pharmacy-store",
+  "name": "daroyar-pharmacy-store",
   "version": "1.0.0",
-  "description": "Darooyar - demo personal-care storefront (React + Tailwind CSS)",
+  "description": "Daroyar - demo pharmacy storefront (React + TypeScript + Tailwind CSS)",
   "scripts": {
     "dev": "concurrently -k -n api,web -c cyan,green \"npm:server\" \"npm:client\"",
     "client": "vite",
-    "server": "node server/index.js",
-    "server:reset": "node server/index.js --reset",
-    "seed": "node server/seed/index.js",
-    "build": "vite build",
+    "server": "tsx server/index.ts",
+    "server:reset": "tsx server/index.ts --reset",
+    "seed": "tsx server/seed/index.ts",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.server.json",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "format": "prettier --write src"
+    "format": "prettier --write src server plugins"
   },
   "type": "module",
   "dependencies": {
@@ -37,18 +38,26 @@
   "devDependencies": {
     "@eslint/js": "^9.39.5",
     "@tailwindcss/vite": "^4.3.3",
+    "@types/express": "^4.17.25",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "concurrently": "^10.0.6",
     "eslint": "^9.39.5",
-    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
     "globals": "^17.13.0",
+    "jiti": "^2.7.0",
     "prettier": "^3.9.10",
     "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
     "vite": "^8.3.4"
   },
   "engines": {
     "node": ">=22.22.0"
   },
-  "private": true
+  "private": true,
+  "license": "MIT"
 }
